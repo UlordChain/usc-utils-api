@@ -15,7 +15,7 @@ String uscPrivKey = UscConversionUtils.privKeyToUscFormat("UlordPrivateKey");
 //To get the USC address
 String address = UscConversionUtils.getUscAddress("uscPrivKey").toLowerCase();
 
-//To convert USC private key to Ulord private key 
+//To convert USC private key to Ulord private key
 //First Parameter can be either ("main", "test")
 //@main to generate private key for mainnet.
 //@test to generate Private key for testnet.
