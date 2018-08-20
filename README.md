@@ -8,12 +8,12 @@ and add the following in build.gradle dependencies section:-
 compile fileTree(dir: 'libs', include: '*.jar')
 ```
 
-## Import the UscConversionUtils class  
+### Import the UscConversionUtils class  
 ```
 import utils.UscConversionUtils;
 ```
 
-## Call static functions  
+### Call static functions  
 ```
 //To convert Ulord private key to USC private key  
 String uscPrivKey = UscConversionUtils.privKeyToUscFormat("UlordPrivateKey");  
