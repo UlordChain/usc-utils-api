@@ -1,0 +1,8 @@
+# Gradle
+.gradle
+build
+
+# IDEA
+out
+.idea
+libs
