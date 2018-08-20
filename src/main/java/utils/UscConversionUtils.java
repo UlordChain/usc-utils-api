@@ -1,8 +1,9 @@
 package utils;
 
-import co.usc.ulordj.core.Base58;
-import co.usc.ulordj.core.Sha256Hash;
+
+import core.Base58;
 import core.ECKey;
+import core.Sha256Hash;
 
 
 import java.util.Arrays;
