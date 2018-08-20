@@ -44,7 +44,7 @@ public class UscConversionUtils {
         partialResult[uscPrivateKeyArray.length+1] = (byte)0x01;
 
         result = new byte[partialResult.length+4];
-        //var check = convertHex.hexToBytes(sha256(convertHex.hexToBytes(sha256(partialResult))));
+
         byte[] check = Sha256Hash.hashTwice(partialResult);
 
         for (int i = 0;  i < partialResult.length; i++) {
