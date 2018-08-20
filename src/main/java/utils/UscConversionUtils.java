@@ -28,7 +28,6 @@ public class UscConversionUtils {
         return Sha256Hash.bytesToHex(addressInUscFormat);
     }
 
-    //@uldNet testnet
     public static String getUldPrivateKey(String uldNet, String uscPrivateKey){
         byte[] uscPrivateKeyArray = Sha256Hash.hexStringToByteArray(uscPrivateKey);
         byte[] partialResult = new byte[uscPrivateKeyArray.length+2];
