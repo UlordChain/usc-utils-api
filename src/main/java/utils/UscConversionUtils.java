@@ -28,6 +28,12 @@ public class UscConversionUtils {
         return Sha256Hash.bytesToHex(addressInUscFormat);
     }
 
+    public static String getUscPubKey(String uscPrivateKey){
+        ECKey ecKey = ECKey.fromPrivate(Sha256Hash.hexStringToByteArray(uscPrivateKey));
+        byte []pubKey = ecKey.getPubKey();
+        return Sha256Hash.bytesToHex(pubKey);
+    }
+
     public static String getUldPrivateKey(String uldNet, String uscPrivateKey){
         byte[] uscPrivateKeyArray = Sha256Hash.hexStringToByteArray(uscPrivateKey);
         byte[] partialResult = new byte[uscPrivateKeyArray.length+2];

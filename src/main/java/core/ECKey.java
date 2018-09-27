@@ -142,4 +142,14 @@ public class ECKey implements Serializable {
         }
         return pubKeyHash;
     }
+
+    /**
+     * Gets the raw public key value. This appears in transaction scriptSigs. Note that this is <b>not</b> the same
+     * as the pubKeyHash/address.
+     *
+     * @return  -
+     */
+    public byte[] getPubKey() {
+        return pub.getEncoded(false);
+    }
 }
